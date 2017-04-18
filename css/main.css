@@ -1,0 +1,175 @@
+/*
+COLOUR SCHEME:
+pink: #a3748a;
+beige: #ddd3c8;
+teal: #b5c4c5;
+light pink: #dfc9d6;
+dark grey: #212226;
+light grey: #797a7d;
+
+FONTS: 
+font-family: 'Raleway', sans-serif;
+font-family: 'Merriweather', serif;
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Raleway');
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+   content: "";
+   clear: both;
+   display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #ddd3c8;
+    font-size: 0.618rem;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13pt;
+    color: #212226;
+}
+
+nav ul li {
+    text-overflow: hidden;
+    display: inline-block;
+    list-style-type: none;
+    font-family: 'Merriweather', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Merriweather', serif;
+    color: #212226;
+    text-align: center;
+}
+
+.masthead {
+    background-color: #b5c4c5;
+    max-width: 100%;
+}
+
+footer ul li {
+    font-family: 'Raleway', sans-serif;
+    color: #212226;
+    clear: both;
+    font-size: 12pt;
+    max-height: 5%;
+    list-style-type: none;
+}
+.col-12 {
+    display: inline-block;
+    float: clear;
+    text-align: center;
+    background-color: #b5c4c5;
+}
+
+.feedback {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13pt;
+    color: #a3748a;
+}
+
+/* Media Query */
+/* TABLET  */
+
+@media screen and (min-width: 35rem){
+    body {
+        font-size: 1rem;
+    }
+
+     nav ul li  {
+        text-overflow: hidden;
+        display: inline-block;
+        list-style-type: none;
+        font-family: 'Merriweather', serif;
+    }
+    nav ul li::after {
+        content: "";
+        display: block;
+        clear: left;
+    }
+    .box {
+        margin: 0 1rem 1rem 0;
+    }
+    
+    img {
+        float: left;
+        padding: 1em;
+    }
+    .article-1:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 60rem) {
+    body {
+        font-size: 1.618rem;
+    }
+
+   nav ul li a {
+        width: 100%;
+        text-overflow: hidden;
+        display: inline-block;
+        list-style-type: none;
+        font-family: 'Merriweather', serif;
+    }
+    .box {
+        width: 100%;
+        margin: 0 auto
+    }
+    img {
+        float: left;
+        padding: 1em;
+    }
+    .article-1:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .article-2 {
+        width: 45%;
+        margin-right: 10%;
+        float: left;
+    }
+    .article-3 {
+        width: 45%;
+        float: right;
+    }
+    .article-3:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
